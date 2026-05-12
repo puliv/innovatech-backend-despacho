@@ -13,7 +13,7 @@ target/
 .git/
 .gitignore
 docker-compose.override.yml
-Dockerfile*
+
 
 # Ignora archivos temporales
 *.swp
