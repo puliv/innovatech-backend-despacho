@@ -19,4 +19,4 @@ docker-compose.override.yml
 *.swp
 *~
 
-echo "# deploy" >> .dockerignore
+echo "# deploy" >> .dockerignore# update
