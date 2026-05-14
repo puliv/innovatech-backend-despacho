@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend-despacho:
+    build: .
+    container_name: backend-despacho
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/innovatech_db
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+    networks:
+      - innovatech-net
+
+networks:
+  innovatech-net:
+    external: true
+    name: innovatech-backend-ventas_innovatech-net
